@@ -11,6 +11,12 @@
 		<link href="bootstrap-4.2.1-dist/css/bootstrap-grid.min.css" rel="stylesheet">
 		<link href="bootstrap-4.2.1-dist/css/bootstrap-reboot.css" rel="stylesheet">
 		<link href="bootstrap-4.2.1-dist/css/bootstrap-reboot.min.css" rel="stylesheet">
+		<link href="bootstrap-4.2.1-dist/js/bootstrap.bundle.js" rel="stylesheet">
+		<link href="bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+		<link href="bootstrap-4.2.1-dist/js/bootstrap.js" rel="stylesheet">
+		<link href="bootstrap-4.2.1-dist/js/bootstrap.min.js" rel="stylesheet">
+
+
 
 	</head>
 
@@ -18,17 +24,25 @@
 	<body>
 		<div class="container">
 		<header>
-			<div class="wrapper">
-				<div class="logo-search">
+			<div class="wrapper d-flex">
+				<div class="logo-search d-inline-flex flex-grow-1">
 					<img class="pull-left" src="img/logo.png" />
 				</div>
-				<form method="POST" action="index.html">
+				<form class="d-inline-flex" method="POST" action="index.html">
 					<input type="search" required class="search">
 					<input type="submit" name="submit" value="Rechercher" class="submit">
 				</form>
 
-				<div class="user">
-				    <a href="#">Luke Chesser</a>
+				<div class="user d-inline-flex">
+					<div class="dropdown">
+						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Luke Chesser
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu">
+
+				    	<a class="dropdown-item" href="#">Edit my profile</a>
+				    	<a class="dropdown-item" href="#">Logout</a>
+				    	</div>
+				    </div>
 				</div>
 
 			</div>
