@@ -216,7 +216,7 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0rem; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0rem; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0rem; }
 
-@media (max-width: 767px){
+@media (max-width: 40rem){
     input.search{
         display: none;
     }
